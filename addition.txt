@@ -1,0 +1,9 @@
+#!/bin/bash
+
+a=$((RANDOM%99));
+echo First Number is:  $a;
+b=$((RANDOM%99));
+echo Second Number is: $b;
+add=$((a + b ));
+
+echo Sum of Two Numbers is : $add;
