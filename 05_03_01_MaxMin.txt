@@ -1,0 +1,43 @@
+#!bin/bash
+
+#This program is for largest of 5 numbers
+
+max=0;
+for((i=1;i<6;i++))
+do 
+	num=$((RANDOM%1000))
+	if [ $num -lt 100 ]				#for getting all 5 numbers as three digit numbers
+	then	
+		i=$(($i - 1))
+	else
+		echo "$i number is $num"
+	fi
+		
+	
+
+	if [ $i -eq 1 ]					#max number
+	then
+		max=$num				#set first number as max
+	else 
+		if [ $num -gt $max  ]			#from number 2 update max if the num > max.
+		then
+			max=$num	
+		fi
+	fi
+
+
+
+	if [ $i -eq 1 -a $num -ge 100 ]			#min number
+	then
+		min=$num				#set first number as min
+	else 
+		if [ $num -lt $min -a $num -ge 100  ]	#from number 2 update min if the num < min.
+		then
+			min=$num
+		fi
+	fi
+
+done
+	echo "Max Number is : $max"
+	echo "Min Number is : $min"
+

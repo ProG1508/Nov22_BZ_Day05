@@ -1,0 +1,32 @@
+#!/bin/bash
+
+read -p "Please enter month:- " month 
+read -p "Please enter Date:- " date
+
+if [ $month -le 6 -a $month -ge 3 ]
+then
+
+	if [ $month -eq 6 -a $date -le 20 -a $date -gt 0 ]
+	then
+		echo "True"
+
+	elif [ $month -ge 3 -a $date -ge 20 -a $date -le 31 ]
+	then
+		echo "True"
+
+	elif [ $month -gt 3 -a $month -lt 6 -a $date -le 31 ]
+	then 
+		echo "True"
+	
+	else
+		echo "Not in Range Date"	
+	fi
+
+else
+
+	echo "Not in range Date"
+fi
+
+			
+
+

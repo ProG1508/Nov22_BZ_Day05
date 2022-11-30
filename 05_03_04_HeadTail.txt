@@ -1,0 +1,12 @@
+#!/bin/bash 
+
+#This program is to simulate a flip of coin
+
+num=$(($RANDOM%2)) 
+
+if [ $num = 0 ]
+then
+	echo "Head"
+else
+	echo "Tail"
+fi
