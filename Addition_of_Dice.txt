@@ -1,0 +1,27 @@
+#!/bin/bash
+
+#This program is for addition of two upperface numbers on two dice
+
+dice1=$((Random%7));
+
+if [ $dice1 -lt 1 ]
+then	
+	dice1=$(( $dice1 + 1 ));
+		
+fi
+
+echo dice1 number is: $dice1;
+dice2=$((RANDOM%7));
+
+	if [ $dice2 -lt 1 ]
+	then
+		dice2=$(($dice2 + 1));
+		
+	fi
+
+echo dice2 number is: $dice2;
+
+add=$(( dice1 + dice2 ));
+
+echo addition: $add;
+

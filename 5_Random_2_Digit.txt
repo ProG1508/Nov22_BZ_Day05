@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#This program is for 2 digit Random 5 numbers
+
+for((i=1;i<6;i++))
+do
+	num=$((RANDOM%100))
+	echo Random number $i is: $num 
+	sum=$(( sum + $num ))
+
+done
+
+echo Total: $sum
+
+echo Average: $(($sum/5))
+

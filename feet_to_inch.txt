@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#This Program is for converting feet into inch
+
+read -p "Please enter height in feet - " h  
+
+h=$(($h/12))
+
+printf "$h feet"

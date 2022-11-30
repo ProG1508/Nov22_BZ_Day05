@@ -1,0 +1,5 @@
+#!/bin/bash -x
+
+#Program To Generate Random Number
+
+echo $((Random%100));
