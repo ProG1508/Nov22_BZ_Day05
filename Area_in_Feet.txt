@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#This program is for feet to meters
+
+read -p "Please enter length value - " l 
+echo feet
+
+read -p "Please enter breadth value - " b
+echo feet
+
+A=$(($l*$b))
+
+echo Area= $A sq. feet
+echo Area=$(($A/100)) sq. meters
